@@ -301,7 +301,7 @@ msgid ""
 "                                    able to signup to get all his documents,\n"
 "                                    read your company news, check his projects,\n"
 "                                    etc."
-msgstr "当你发送单据给客户（报价单，发票），你的可能能登录，获取他单据，阅读你的公司新闻，检查他的项目等。"
+msgstr "当你发送单据给客户（报价单，票据），你的可能能登录，获取他单据，阅读你的公司新闻，检查他的项目等。"
 
 #. module: base_setup
 #: model:ir.model.fields,help:base_setup.field_base_config_settings_group_light_multi_company

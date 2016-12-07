@@ -53,7 +53,7 @@ msgstr "BBA结构化传输有误！"
 #. module: l10n_be_invoice_bba
 #: model:ir.model,name:l10n_be_invoice_bba.model_account_invoice
 msgid "Invoice"
-msgstr "发票"
+msgstr "票据"
 
 #. module: l10n_be_invoice_bba
 #: model:ir.model,name:l10n_be_invoice_bba.model_res_partner
@@ -70,7 +70,7 @@ msgstr "随机"
 msgid ""
 "Select Algorithm to generate the Structured Communication on Outgoing "
 "Invoices."
-msgstr "自动生成循环发票"
+msgstr "自动生成循环票据"
 
 #. module: l10n_be_invoice_bba
 #: model:ir.model.fields,help:l10n_be_invoice_bba.field_res_partner_out_inv_comm_type
@@ -101,7 +101,7 @@ msgstr "合作伙伴应该有BBA的产生结构化通信3-7位数的参考编号
 msgid ""
 "The daily maximum of outgoing invoices with an automatically generated BBA Structured Communications has been exceeded!\n"
 "Please create manually a unique BBA Structured Communication."
-msgstr "自动生成结构化BBA传输已超出每日销售发票的最大值,请手动建立BBA结构化传输"
+msgstr "自动生成结构化BBA传输已超出每日销售票据的最大值,请手动建立BBA结构化传输"
 
 #. module: l10n_be_invoice_bba
 #: code:addons/l10n_be_invoice_bba/invoice.py:130

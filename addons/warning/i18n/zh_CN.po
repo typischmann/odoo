@@ -29,12 +29,12 @@ msgstr "受阻消息"
 #: model:ir.model,name:warning.model_account_invoice
 #: model:ir.model.fields,field_description:warning.field_res_partner_invoice_warn
 msgid "Invoice"
-msgstr "发票"
+msgstr "票据"
 
 #. module: warning
 #: model:ir.model.fields,field_description:warning.field_res_partner_invoice_warn_msg
 msgid "Message for Invoice"
-msgstr "发票消息"
+msgstr "票据消息"
 
 #. module: warning
 #: model:ir.model.fields,field_description:warning.field_res_partner_purchase_warn_msg
@@ -147,7 +147,7 @@ msgstr "%s 的警告"
 #. module: warning
 #: model:ir.ui.view,arch_db:warning.view_partner_warning_form
 msgid "Warning on the Invoice"
-msgstr "发票警告"
+msgstr "票据警告"
 
 #. module: warning
 #: model:ir.ui.view,arch_db:warning.view_partner_warning_form

@@ -292,7 +292,7 @@ msgstr "Intrastat transportation modes"
 #. module: l10n_be_intrastat
 #: model:ir.model,name:l10n_be_intrastat.model_account_invoice
 msgid "Invoice"
-msgstr "发票"
+msgstr "票据"
 
 #. module: l10n_be_intrastat
 #: model:ir.model,name:l10n_be_intrastat.model_account_invoice_line

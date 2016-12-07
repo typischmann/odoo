@@ -84,7 +84,7 @@ msgid ""
 "A description of the Product that you want to communicate to your customers."
 " This description will be copied to every Sale Order, Delivery Order and "
 "Customer Invoice/Refund"
-msgstr "一个传达给客户的、关于该产品的描述。这个描述将会拷贝到每一个销售单，交货单和客户发票/退款单。"
+msgstr "一个传达给客户的、关于该产品的描述。这个描述将会拷贝到每一个销售单，交货单和客户票据/退款单。"
 
 #. module: delivery
 #: model:ir.model.fields,help:delivery.field_delivery_carrier_description_purchase
@@ -148,7 +148,7 @@ msgstr "生成该产品的平均延时天数。在多级BoM的情况下，部件
 #. module: delivery
 #: model:ir.model.fields,help:delivery.field_delivery_carrier_sale_avg_price
 msgid "Avg. Price in Customer Invoices."
-msgstr "客户发票中的平均价格"
+msgstr "客户票据中的平均价格"
 
 #. module: delivery
 #: model:ir.model.fields,help:delivery.field_delivery_carrier_purchase_avg_price
@@ -698,7 +698,7 @@ msgstr ""
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_invoice_state
 msgid "Invoice State"
-msgstr "发票状态"
+msgstr "票据状态"
 
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_invoice_policy
@@ -1155,7 +1155,7 @@ msgstr "小尺寸图片"
 msgid ""
 "Specify a unit of measure here if invoicing is made in another unit of "
 "measure than inventory. Keep empty to use the default unit of measure."
-msgstr "如果制作发票的单位跟库存不一致，指定一个计量单位，留空使用默认单位。"
+msgstr "如果制作票据的单位跟库存不一致，指定一个计量单位，留空使用默认单位。"
 
 #. module: delivery
 #: model:ir.model.fields,help:delivery.field_delivery_carrier_product_sale_ok
@@ -1210,7 +1210,7 @@ msgstr ""
 #: model:ir.model.fields,help:delivery.field_delivery_carrier_turnover
 msgid ""
 "Sum of Multiplication of Invoice price and quantity of Customer Invoices"
-msgstr "客户发票的开票价格和数量相乘的汇总"
+msgstr "客户票据的开票价格和数量相乘的汇总"
 
 #. module: delivery
 #: model:ir.model.fields,help:delivery.field_delivery_carrier_total_cost
@@ -1222,12 +1222,12 @@ msgstr ""
 msgid ""
 "Sum of Multiplication of Sale Catalog price and quantity of Customer "
 "Invoices"
-msgstr "客户发票的销售分类价格和数量相乘的汇总"
+msgstr "客户票据的销售分类价格和数量相乘的汇总"
 
 #. module: delivery
 #: model:ir.model.fields,help:delivery.field_delivery_carrier_sale_num_invoiced
 msgid "Sum of Quantity in Customer Invoices"
-msgstr "客户发票数量合计"
+msgstr "客户票据数量合计"
 
 #. module: delivery
 #: model:ir.model.fields,help:delivery.field_delivery_carrier_purchase_num_invoiced
@@ -1306,7 +1306,7 @@ msgstr "这科目将用于采购价格和成本价格之间的差异"
 #. module: delivery
 #: model:ir.model.fields,help:delivery.field_res_partner_property_delivery_carrier_id
 msgid "This delivery method will be used when invoicing from picking."
-msgstr "这个送货方式会在基于送货单开发票的时候使用。"
+msgstr "这个送货方式会在基于送货单开票据的时候使用。"
 
 #. module: delivery
 #: model:ir.model.fields,help:delivery.field_delivery_carrier_image_variant

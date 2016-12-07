@@ -252,12 +252,12 @@ msgstr ""
 #. module: stock_account
 #: model:ir.model,name:stock_account.model_account_invoice
 msgid "Invoice"
-msgstr "发票"
+msgstr "票据"
 
 #. module: stock_account
 #: model:ir.model,name:stock_account.model_account_invoice_line
 msgid "Invoice Line"
-msgstr "发票行"
+msgstr "票据行"
 
 #. module: stock_account
 #: model:ir.model.fields,field_description:stock_account.field_stock_config_settings_module_stock_landed_costs
@@ -426,7 +426,7 @@ msgstr "原文"
 msgid ""
 "Specify a unit of measure here if invoicing is made in another unit of "
 "measure than inventory. Keep empty to use the default unit of measure."
-msgstr "如果制作发票的单位跟库存不一致，指定一个计量单位，留空使用默认单位。"
+msgstr "如果制作票据的单位跟库存不一致，指定一个计量单位，留空使用默认单位。"
 
 #. module: stock_account
 #: model:ir.model.fields,help:stock_account.field_product_product_can_be_expensed

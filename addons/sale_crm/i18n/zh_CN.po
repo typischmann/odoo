@@ -135,7 +135,7 @@ msgid ""
 "-Waiting Member: A member who has applied for the membership and whose invoice is going to be created.\n"
 "-Invoiced Member: A member whose invoice has been created.\n"
 "-Paying member: A member who has paid the membership fee."
-msgstr "它表明会员的状态。\n                    -非会员：业务伙伴没有申请任何会员。\n                    -取消会员：会员已取消他的会员资格。\n                    -过期会员:其成员日期已经过期。\n                    -未审核会员：已申请成为成员的人，他们的发票即将被创建。\n                    -开具发票的会员：会员的发票已创建。\n                    -付费会员：已支付会员费的会员。"
+msgstr "它表明会员的状态。\n                    -非会员：业务伙伴没有申请任何会员。\n                    -取消会员：会员已取消他的会员资格。\n                    -过期会员:其成员日期已经过期。\n                    -未审核会员：已申请成为成员的人，他们的票据即将被创建。\n                    -开具票据的会员：会员的票据已创建。\n                    -付费会员：已支付会员费的会员。"
 
 #. module: sale_crm
 #: model:ir.model,name:sale_crm.model_crm_lead

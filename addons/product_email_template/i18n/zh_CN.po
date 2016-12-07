@@ -658,7 +658,7 @@ msgstr "邮件模板"
 #. module: product_email_template
 #: model:ir.model,name:product_email_template.model_account_invoice
 msgid "Invoice"
-msgstr "发票"
+msgstr "票据"
 
 #. module: product_email_template
 #: model:ir.ui.view,arch_db:product_email_template.product_template_form_view

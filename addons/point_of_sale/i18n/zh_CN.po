@@ -1224,7 +1224,7 @@ msgstr "客户"
 #: code:addons/point_of_sale/point_of_sale.py:1168
 #, python-format
 msgid "Customer Invoice"
-msgstr "客户发票"
+msgstr "客户票据"
 
 #. module: point_of_sale
 #: model:ir.ui.menu,name:point_of_sale.menu_pos_dashboard
@@ -1537,7 +1537,7 @@ msgstr "启用完整的虚拟键盘"
 #. module: point_of_sale
 #: model:ir.model.fields,help:point_of_sale.field_pos_config_iface_invoicing
 msgid "Enables invoice generation from the Point of Sale"
-msgstr "允许从本POS创建发票。"
+msgstr "允许从本POS创建票据。"
 
 #. module: point_of_sale
 #: model:ir.ui.view,arch_db:point_of_sale.view_pos_session_form
@@ -1917,12 +1917,12 @@ msgstr "内部备注"
 #: model:ir.ui.view,arch_db:point_of_sale.view_pos_pos_form
 #, python-format
 msgid "Invoice"
-msgstr "发票"
+msgstr "票据"
 
 #. module: point_of_sale
 #: model:ir.model.fields,field_description:point_of_sale.field_report_transaction_pos_invoice_am
 msgid "Invoice Amount"
-msgstr "发票总额"
+msgstr "票据总额"
 
 #. module: point_of_sale
 #: model:ir.model.fields,field_description:point_of_sale.field_report_pos_order_invoiced
@@ -1935,7 +1935,7 @@ msgstr "已开票"
 #. module: point_of_sale
 #: model:ir.actions.act_window,name:point_of_sale.action_pos_invoice
 msgid "Invoices"
-msgstr "发票"
+msgstr "票据"
 
 #. module: point_of_sale
 #: model:ir.model.fields,field_description:point_of_sale.field_pos_config_iface_invoicing
@@ -2214,7 +2214,7 @@ msgstr "名称"
 #. module: point_of_sale
 #: model:ir.model.fields,field_description:point_of_sale.field_report_transaction_pos_invoice_id
 msgid "Nbr Invoice"
-msgstr "发票编号"
+msgstr "票据编号"
 
 #. module: point_of_sale
 #. openerp-web
@@ -3892,7 +3892,7 @@ msgstr ""
 #. module: point_of_sale
 #: model:ir.model.fields,help:point_of_sale.field_res_users_property_delivery_carrier_id
 msgid "This delivery method will be used when invoicing from picking."
-msgstr "这个送货方式会在基于送货单开发票的时候使用。"
+msgstr "这个送货方式会在基于送货单开票据的时候使用。"
 
 #. module: point_of_sale
 #: model:ir.model.fields,help:point_of_sale.field_account_journal_amount_authorized_diff
@@ -4292,7 +4292,7 @@ msgstr ""
 msgid ""
 "You cannot change the partner of a POS order for which an invoice has "
 "already been issued."
-msgstr "在开出发票后，你不能改变POS订单的业务伙伴。"
+msgstr "在开出票据后，你不能改变POS订单的业务伙伴。"
 
 #. module: point_of_sale
 #: code:addons/point_of_sale/point_of_sale.py:640

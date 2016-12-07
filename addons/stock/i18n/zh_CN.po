@@ -4845,7 +4845,7 @@ msgstr ""
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.view_picking_form
 msgid "Reserve"
-msgstr "延期"
+msgstr "预留"
 
 #. module: stock
 #: selection:stock.config.settings,module_procurement_jit:0
@@ -5946,7 +5946,7 @@ msgstr "待办"
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.stock_picking_type_kanban
 msgid "To Receive"
-msgstr ""
+msgstr "待接收"
 
 #. module: stock
 #: model:ir.ui.view,arch_db:stock.inventory_planner

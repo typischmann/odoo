@@ -403,7 +403,7 @@ msgid ""
 "the end of the period defined in the company, the timesheet is confirmed by "
 "the user and can be validated by his manager. If required, as defined on the"
 " project, you can generate the invoices based on the timesheet."
-msgstr "用\"我的计工单\"菜单开启您的计工单所以您能在系统预定你的活动。用相同方式，您能记录您的考勤（签入/签出）同时记录在不同项目的工作时间。在公司定义的期末，确认用户的计工单和经由经理使其生效。如果需要，可以定义为一个项目，你能给这计工单开发票。"
+msgstr "用\"我的计工单\"菜单开启您的计工单所以您能在系统预定你的活动。用相同方式，您能记录您的考勤（签入/签出）同时记录在不同项目的工作时间。在公司定义的期末，确认用户的计工单和经由经理使其生效。如果需要，可以定义为一个项目，你能给这计工单开票据。"
 
 #. module: hr_timesheet_sheet
 #: selection:hr.timesheet.report,state:0

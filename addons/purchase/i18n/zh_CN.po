@@ -176,7 +176,7 @@ msgstr ""
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_invoice_count
 msgid "# of Invoices"
-msgstr "# 发票"
+msgstr "# 票据"
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_report_nbr
@@ -590,7 +590,7 @@ msgstr "交货到"
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.purchase_order_form
 msgid "Deliveries & Invoices"
-msgstr "发货与发票"
+msgstr "发货与票据"
 
 #. module: purchase
 #: model:ir.model.fields,help:purchase.field_purchase_order_date_order
@@ -765,27 +765,27 @@ msgstr "国际商业条款是一系列预定义的用于国际贸易的商业条
 #. module: purchase
 #: model:ir.model,name:purchase.model_account_invoice
 msgid "Invoice"
-msgstr "发票"
+msgstr "票据"
 
 #. module: purchase
 #: model:ir.model,name:purchase.model_account_invoice_line
 msgid "Invoice Line"
-msgstr "发票行"
+msgstr "票据行"
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_line_invoice_lines
 msgid "Invoice Lines"
-msgstr "发票行"
+msgstr "票据行"
 
 #. module: purchase
 #: selection:purchase.order,invoice_status:0
 msgid "Invoice Received"
-msgstr "已收发票"
+msgstr "已收票据"
 
 #. module: purchase
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_invoice_status
 msgid "Invoice Status"
-msgstr "发票状态"
+msgstr "票据状态"
 
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.view_purchase_order_filter
@@ -796,7 +796,7 @@ msgstr "已开票"
 #: model:ir.model.fields,field_description:purchase.field_purchase_order_invoice_ids
 #: model:ir.ui.view,arch_db:purchase.purchase_order_form
 msgid "Invoices"
-msgstr "发票"
+msgstr "票据"
 
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.purchase_order_form
@@ -863,7 +863,7 @@ msgstr "经理"
 #. module: purchase
 #: model:ir.ui.view,arch_db:purchase.purchase_order_line_form2
 msgid "Manual Invoices"
-msgstr "手工发票"
+msgstr "手工票据"
 
 #. module: purchase
 #: model:ir.model.fields,help:purchase.field_res_company_po_lead

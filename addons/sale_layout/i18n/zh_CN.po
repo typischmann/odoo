@@ -115,12 +115,12 @@ msgstr "ID"
 #. module: sale_layout
 #: model:ir.model,name:sale_layout.model_account_invoice
 msgid "Invoice"
-msgstr "发票"
+msgstr "票据"
 
 #. module: sale_layout
 #: model:ir.model,name:sale_layout.model_account_invoice_line
 msgid "Invoice Line"
-msgstr "发票行"
+msgstr "票据行"
 
 #. module: sale_layout
 #: model:ir.model.fields,field_description:sale_layout.field_sale_layout_category___last_update

@@ -2200,7 +2200,7 @@ msgstr "☑ 30天退款保证"
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.cart
 msgid "☑ Invoice sent by e-Mail"
-msgstr "☑承诺Email电子发票"
+msgstr "☑承诺Email电子票据"
 
 #. module: website_sale
 #: model:ir.ui.view,arch_db:website_sale.cart

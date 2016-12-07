@@ -59,7 +59,7 @@ msgstr "文件"
 #. module: website_sale_digital
 #: model:ir.model,name:website_sale_digital.model_account_invoice_line
 msgid "Invoice Line"
-msgstr "发票行"
+msgstr "票据行"
 
 #. module: website_sale_digital
 #: model:product.template,description:website_sale_digital.product_1

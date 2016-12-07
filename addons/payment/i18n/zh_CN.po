@@ -349,7 +349,7 @@ msgstr "最后更新"
 #. module: payment
 #: model:ir.model.fields,help:payment.field_payment_acquirer_website_published
 msgid "Make this payment acquirer available (Customer invoices, etc.)"
-msgstr "创建采购付款单据(客户发票等)"
+msgstr "创建采购付款单据(客户票据等)"
 
 #. module: payment
 #: model:ir.model.fields,field_description:payment.field_payment_acquirer_image_medium

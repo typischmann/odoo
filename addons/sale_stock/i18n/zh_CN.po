@@ -113,7 +113,7 @@ msgstr "库存路径"
 #. module: sale_stock
 #: model:ir.model,name:sale_stock.model_account_invoice
 msgid "Invoice"
-msgstr "发票"
+msgstr "票据"
 
 #. module: sale_stock
 #: model:ir.model,name:sale_stock.model_account_invoice_line

@@ -75,7 +75,7 @@ msgstr "8月"
 #. module: report_intrastat
 #: model:ir.ui.view,arch_db:report_intrastat.report_intrastatinvoice_document
 msgid "Cancelled Invoice"
-msgstr "已取消的发票"
+msgstr "已取消的票据"
 
 #. module: report_intrastat
 #: model:ir.model.fields,field_description:report_intrastat.field_report_intrastat_company_id
@@ -120,7 +120,7 @@ msgstr ""
 #. module: report_intrastat
 #: model:ir.ui.view,arch_db:report_intrastat.report_intrastatinvoice_document
 msgid "Draft Invoice"
-msgstr "草稿发票"
+msgstr "草稿票据"
 
 #. module: report_intrastat
 #: selection:report.intrastat,type:0
@@ -165,7 +165,7 @@ msgstr "欧盟内部数据"
 #. module: report_intrastat
 #: model:ir.actions.report.xml,name:report_intrastat.account_intrastatinvoices
 msgid "Intrastat Invoices"
-msgstr "内部发票"
+msgstr "内部票据"
 
 #. module: report_intrastat
 #: model:ir.model,name:report_intrastat.model_report_intrastat_code
@@ -188,7 +188,7 @@ msgstr "内部统计报告"
 #. module: report_intrastat
 #: model:ir.ui.view,arch_db:report_intrastat.report_intrastatinvoice_document
 msgid "Invoice"
-msgstr "发票"
+msgstr "票据"
 
 #. module: report_intrastat
 #: selection:report.intrastat,month:0

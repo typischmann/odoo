@@ -145,7 +145,7 @@ msgstr "ID"
 #. module: auth_oauth
 #: model:ir.model.fields,field_description:auth_oauth.field_res_users_invoice_ids
 msgid "Invoices"
-msgstr "发票"
+msgstr "票据"
 
 #. module: auth_oauth
 #: model:ir.model.fields,field_description:auth_oauth.field_res_users_issued_total
@@ -286,7 +286,7 @@ msgstr ""
 msgid ""
 "This payment term will be used instead of the default one for sale orders "
 "and customer invoices"
-msgstr "该付款方式将代替销售记录和客户发票的默认值。"
+msgstr "该付款方式将代替销售记录和客户票据的默认值。"
 
 #. module: auth_oauth
 #: model:ir.ui.view,arch_db:auth_oauth.view_general_configuration
