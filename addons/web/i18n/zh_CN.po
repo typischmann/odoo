@@ -352,7 +352,7 @@ msgstr "添加一个项目"
 #: code:addons/web/static/src/xml/base.xml:1199
 #, python-format
 msgid "Add custom group"
-msgstr ""
+msgstr "添加自定义分组"
 
 #. module: web
 #. openerp-web

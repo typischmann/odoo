@@ -10060,7 +10060,7 @@ msgstr ""
 #. module: base
 #: selection:res.partner,company_type:0
 msgid "Individual"
-msgstr ""
+msgstr "个人"
 
 #. module: base
 #: model:res.country,name:base.id
@@ -10229,13 +10229,13 @@ msgstr ""
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_partner_form
 msgid "Internal Notes"
-msgstr ""
+msgstr "内部备注"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_partner_ref
 #: model:ir.model.fields,field_description:base.field_res_users_ref
 msgid "Internal Reference"
-msgstr ""
+msgstr "内部编号"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_translation_src
@@ -10250,7 +10250,7 @@ msgstr ""
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_partner_form
 msgid "Internal note..."
-msgstr ""
+msgstr "内部备注..."
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_cron_interval_number
@@ -10640,7 +10640,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:base.field_res_users_lang
 #: model:ir.ui.view,arch_db:base.res_lang_search
 msgid "Language"
-msgstr ""
+msgstr "语言"
 
 #. module: base
 #: model:ir.model,name:base.model_base_language_import
@@ -10671,7 +10671,7 @@ msgstr ""
 #: model:ir.ui.view,arch_db:base.res_lang_search
 #: model:ir.ui.view,arch_db:base.res_lang_tree
 msgid "Languages"
-msgstr ""
+msgstr "语言"
 
 #. module: base
 #: selection:base.language.install,lang:0
@@ -11611,13 +11611,13 @@ msgstr ""
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_partner_form
 msgid "Misc"
-msgstr ""
+msgstr "杂项"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_model_fields_form
 #: model:ir.ui.view,arch_db:base.view_model_form
 msgid "Miscellaneous"
-msgstr ""
+msgstr "杂项"
 
 #. module: base
 #: model:res.partner.title,name:base.res_partner_title_miss
@@ -12787,7 +12787,7 @@ msgstr ""
 #: model:ir.model,name:base.model_res_partner_category
 #: model:ir.ui.view,arch_db:base.view_partner_category_list
 msgid "Partner Tags"
-msgstr ""
+msgstr "伙伴标签"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_partner_title_form
@@ -13181,7 +13181,7 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_print
 msgid "Print Invoice"
-msgstr ""
+msgstr "打印票据"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_print_docsaway
@@ -13282,37 +13282,37 @@ msgstr ""
 #: model:ir.module.category,name:base.module_category_project_management
 #: model:ir.ui.menu,name:base.menu_main_pm
 msgid "Project"
-msgstr ""
+msgstr "项目"
 
 #. module: base
 #: model:ir.module.category,name:base.module_category_project_and_timesheet_management
 msgid "Project & Timesheet Management"
-msgstr ""
+msgstr "项目 & 时间表 管理"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_project_forecast
 msgid "Project Forecast"
-msgstr ""
+msgstr "项目预测"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_project
 msgid "Project Management"
-msgstr ""
+msgstr "项目管理"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_rating_project
 msgid "Project Rating"
-msgstr ""
+msgstr "项目评估"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_project
 msgid "Projects, Tasks"
-msgstr ""
+msgstr "项目, 任务"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_workflow_activity_form
 msgid "Properties"
-msgstr ""
+msgstr "属性"
 
 #. module: base
 #: code:addons/base/ir/ir_model.py:501
@@ -13325,7 +13325,7 @@ msgstr ""
 #. module: base
 #: model:res.partner.category,name:base.res_partner_category_2
 msgid "Prospect"
-msgstr ""
+msgstr "展望"
 
 #. module: base
 #: model:ir.model.fields,help:base.field_ir_act_server_write_expression
@@ -13379,28 +13379,28 @@ msgstr ""
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_partner_form
 msgid "Purchase"
-msgstr ""
+msgstr "采购"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_purchase
 msgid "Purchase Management"
-msgstr ""
+msgstr "采购管理"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_purchase
 msgid "Purchase Orders, Receipts, Vendor Bills"
-msgstr ""
+msgstr "采购订单, 收据, 供应商票据"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_purchase_requisition
 msgid "Purchase Requisitions"
-msgstr ""
+msgstr "采购要求"
 
 #. module: base
 #: model:ir.module.category,name:base.module_category_purchase_management
 #: model:ir.ui.menu,name:base.menu_purchase_root
 msgid "Purchases"
-msgstr ""
+msgstr "采购"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_wkf_activity_action
@@ -13764,12 +13764,12 @@ msgstr ""
 #. module: base
 #: selection:ir.translation,type:0
 msgid "Report/Template"
-msgstr ""
+msgstr "报表/模板"
 
 #. module: base
 #: model:ir.module.category,name:base.module_category_reporting
 msgid "Reporting"
-msgstr ""
+msgstr "报表"
 
 #. module: base
 #: model:ir.actions.act_window,name:base.ir_action_report_xml
@@ -13779,7 +13779,7 @@ msgstr ""
 #: model:ir.ui.menu,name:base.menu_sale_report
 #: model:ir.ui.menu,name:base.purchase_report
 msgid "Reports"
-msgstr ""
+msgstr "报表"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.res_request_link-view
@@ -14058,7 +14058,7 @@ msgstr ""
 #: model:ir.module.category,name:base.module_category_sale
 #: model:ir.ui.view,arch_db:base.view_partner_form
 msgid "Sale"
-msgstr ""
+msgstr "销售"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_account_voucher
@@ -14093,60 +14093,60 @@ msgstr ""
 #: model:ir.ui.menu,name:base.menu_sales
 #: model:ir.ui.menu,name:base.menu_sales_config
 msgid "Sales"
-msgstr ""
+msgstr "销售"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_partner_form
 msgid "Sales & Purchases"
-msgstr ""
+msgstr "销售 & 采购"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_sale_expense
 msgid "Sales Expense"
-msgstr ""
+msgstr "销售开支"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_sale
 msgid "Sales Management"
-msgstr ""
+msgstr "销售管理"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_sales_team
 msgid "Sales Team"
-msgstr ""
+msgstr "销售团队"
 
 #. module: base
 #: selection:ir.ui.view,type:0
 msgid "Sales Team Dashboard"
-msgstr ""
+msgstr "销售团队总览"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_sales_team
 #: model:ir.ui.menu,name:base.sales_team_config
 msgid "Sales Teams"
-msgstr ""
+msgstr "销售团队"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_sale_timesheet
 msgid "Sales Timesheet"
-msgstr ""
+msgstr "销售时间表"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_sale_mrp
 msgid "Sales and MRP Management"
-msgstr ""
+msgstr "销售和生产计划管理"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_sale_stock
 msgid "Sales and Warehouse Management"
-msgstr ""
+msgstr "销售和仓库管理"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_partner_user_id
 #: model:ir.model.fields,field_description:base.field_res_users_user_id
 #: model:ir.ui.view,arch_db:base.view_res_partner_filter
 msgid "Salesperson"
-msgstr ""
+msgstr "销售负责人"
 
 #. module: base
 #: model:res.country,name:base.ws
@@ -14941,7 +14941,7 @@ msgstr ""
 #: model:ir.ui.view,arch_db:base.view_res_bank_form
 #, python-format
 msgid "State"
-msgstr ""
+msgstr "省/直辖市"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_country_state_code
@@ -14956,7 +14956,7 @@ msgstr ""
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_country_state_ids
 msgid "States"
-msgstr ""
+msgstr "省/直辖市"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_base_language_install_state
@@ -14969,7 +14969,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:base.field_wkf_workitem_state
 #: model:ir.ui.view,arch_db:base.view_workflow_workitem_search
 msgid "Status"
-msgstr ""
+msgstr "状态"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_sequence_number_increment
@@ -14995,7 +14995,7 @@ msgstr ""
 #. module: base
 #: model:ir.module.category,name:base.module_category_stock_management
 msgid "Stock Management"
-msgstr ""
+msgstr "库存管理"
 
 #. module: base
 #: selection:workflow.activity,kind:0
@@ -15013,14 +15013,14 @@ msgstr ""
 #: model:ir.model.fields,field_description:base.field_res_partner_street
 #: model:ir.model.fields,field_description:base.field_res_users_street
 msgid "Street"
-msgstr ""
+msgstr "街道"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_company_form
 #: model:ir.ui.view,arch_db:base.view_partner_address_form
 #: model:ir.ui.view,arch_db:base.view_partner_form
 msgid "Street 2..."
-msgstr ""
+msgstr "街道 2..."
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_company_form
@@ -15028,7 +15028,7 @@ msgstr ""
 #: model:ir.ui.view,arch_db:base.view_partner_form
 #: model:ir.ui.view,arch_db:base.view_res_bank_form
 msgid "Street..."
-msgstr ""
+msgstr "街道..."
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_bank_street2
@@ -15036,7 +15036,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:base.field_res_partner_street2
 #: model:ir.model.fields,field_description:base.field_res_users_street2
 msgid "Street2"
-msgstr ""
+msgstr "街道2"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_act_server_sub_model_object_field
@@ -15268,13 +15268,13 @@ msgstr ""
 #: model:ir.model.fields,field_description:base.field_res_users_category_id
 #: model:ir.ui.menu,name:base.menu_partner_category_form
 msgid "Tags"
-msgstr ""
+msgstr "标签"
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_partner_form
 #: model:ir.ui.view,arch_db:base.view_partner_simple_form
 msgid "Tags..."
-msgstr ""
+msgstr "标签..."
 
 #. module: base
 #: model:res.country,name:base.tw
@@ -17006,7 +17006,7 @@ msgstr ""
 #: model:ir.module.category,name:base.module_category_website
 #, python-format
 msgid "Website"
-msgstr ""
+msgstr "网站"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website
@@ -17539,7 +17539,7 @@ msgstr ""
 #: model:ir.ui.view,arch_db:base.view_res_bank_form
 #, python-format
 msgid "ZIP"
-msgstr ""
+msgstr "邮编"
 
 #. module: base
 #: model:res.country,name:base.zr

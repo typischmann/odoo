@@ -1229,7 +1229,7 @@ msgstr "客户票据"
 #. module: point_of_sale
 #: model:ir.ui.menu,name:point_of_sale.menu_pos_dashboard
 msgid "Dashboard"
-msgstr ""
+msgstr "总览仪表盘"
 
 #. module: point_of_sale
 #: model:product.product,name:point_of_sale.partner_product_7
