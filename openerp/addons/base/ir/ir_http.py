@@ -195,6 +195,7 @@ class ir_http(osv.AbstractModel):
                 installed.add(openerp.modules.module.current_test)
             mods = [''] + openerp.conf.server_wide_modules + sorted(installed)
             self._routing_map = http.routing_map(mods, False, converters=self._get_converters())
+            _logger.info("Routing map generated")
 
         return self._routing_map
 
