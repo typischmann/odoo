@@ -105,7 +105,6 @@ class ir_http(orm.AbstractModel):
             func, arguments = self._find_handler()
             logger.info("Handler found.")
             request.website_enabled = func.routing.get('website', False)
-            logger.info("website enabled")
         except werkzeug.exceptions.NotFound:
             # either we have a language prefixed route, either a real 404
             # in all cases, website processes them
@@ -170,6 +169,7 @@ class ir_http(orm.AbstractModel):
             # bind modified context
             request.website = request.website.with_context(request.context)
 
+        logger.info("Caching for auth public.")
         # cache for auth public
         cache_time = getattr(func, 'routing', {}).get('cache')
         cache_enable = cache_time and request.httprequest.method == "GET" and request.website.user_id.id == request.uid
@@ -194,6 +194,7 @@ class ir_http(orm.AbstractModel):
 
         if request.website_enabled and cook_lang != request.lang and hasattr(resp, 'set_cookie'):
             resp.set_cookie('website_lang', request.lang)
+        logger.info("Cached for auth public.")
         return resp
 
     def reroute(self, path):

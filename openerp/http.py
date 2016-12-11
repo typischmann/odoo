@@ -1577,7 +1577,9 @@ class Root(object):
                         else:
                             result = _dispatch_nodb()
                     else:
+                        _logger.info('Begining ir_http dispatch')
                         result = ir_http._dispatch()
+                        _logger.info('ir_http dispatch ended')
                         openerp.modules.registry.RegistryManager.signal_caches_change(db)
                 else:
                     result = _dispatch_nodb()

@@ -409,7 +409,6 @@ def load_modules(db, force_demo=False, status=None, update_module=False):
         for model in registry.models.values():
             model._register_hook(cr)
 
-        _logger.info('Runing the post-install tests')
         # STEP 9: Run the post-install tests
         cr.commit()
 
