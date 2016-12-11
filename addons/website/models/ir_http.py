@@ -101,9 +101,7 @@ class ir_http(orm.AbstractModel):
             if request.httprequest.method == 'GET' and '//' in request.httprequest.path:
                 new_url = request.httprequest.path.replace('//', '/') + '?' + request.httprequest.query_string
                 return werkzeug.utils.redirect(new_url, 301)
-            logger.info("Begining to find Handler.")
             func, arguments = self._find_handler()
-            logger.info("Handler found.")
             request.website_enabled = func.routing.get('website', False)
         except werkzeug.exceptions.NotFound:
             # either we have a language prefixed route, either a real 404
@@ -133,6 +131,7 @@ class ir_http(orm.AbstractModel):
             request.context['website_id'] = request.website.id
             langs = [lg[0] for lg in request.website.get_languages()]
             path = request.httprequest.path.split('/')
+            logger.info("before first_pass.")
             if first_pass:
                 nearest_lang = not func and self.get_nearest_lang(path[1])
                 url_lang = nearest_lang and path[1]
@@ -143,6 +142,7 @@ class ir_http(orm.AbstractModel):
                 is_a_bot = self.is_a_bot()
 
                 request.lang = request.context['lang'] = nearest_lang or preferred_lang
+                logger.info("before lang.")
                 # if lang in url but not the displayed or default language --> change or remove
                 # or no lang in url, and lang to dispay not the default language --> add lang
                 # and not a POST request
@@ -162,6 +162,7 @@ class ir_http(orm.AbstractModel):
                 elif url_lang:
                     path.pop(1)
                     return self.reroute('/'.join(path) or '/')
+            logger.info("after first_pass.")
             if path[1] == request.website.default_lang_code:
                 request.context['edit_translations'] = False
             if not request.context.get('tz'):
