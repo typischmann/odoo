@@ -105,6 +105,7 @@ class ir_http(orm.AbstractModel):
             func, arguments = self._find_handler()
             logger.info("Handler found.")
             request.website_enabled = func.routing.get('website', False)
+            logger.info("website enabled")
         except werkzeug.exceptions.NotFound:
             # either we have a language prefixed route, either a real 404
             # in all cases, website processes them
@@ -117,7 +118,7 @@ class ir_http(orm.AbstractModel):
 
         self._geoip_setup_resolver()
         self._geoip_resolve()
-
+        logger.info("geoip resolved.")
         cook_lang = request.httprequest.cookies.get('website_lang')
         if request.website_enabled:
             try:
@@ -207,7 +208,7 @@ class ir_http(orm.AbstractModel):
         # void werkzeug cached_property. TODO: find a proper way to do this
         for key in ('path', 'full_path', 'url', 'base_url'):
             request.httprequest.__dict__.pop(key, None)
-
+        logger.info("Begining _dispatch in reroute.")
         return self._dispatch()
 
     def _postprocess_args(self, arguments, rule):
