@@ -115,17 +115,20 @@ class ir_http(orm.AbstractModel):
 
         self._geoip_setup_resolver()
         self._geoip_resolve()
-        logger.info("geoip resolved.")
         cook_lang = request.httprequest.cookies.get('website_lang')
+        logger.info('before website_enabled.')
         if request.website_enabled:
             try:
                 if func:
+                    logger.info('func')
                     self._authenticate(func.routing['auth'])
                 elif request.uid is None:
+                    logger.info('request.uid')
                     self._auth_method_public()
             except Exception as e:
                 return self._handle_exception(e)
 
+            logger.info('after authentication.')
             request.redirect = lambda url, code=302: werkzeug.utils.redirect(url_for(url), code)
             request.website = request.registry['website'].get_current_website(request.cr, request.uid, context=request.context)
             request.context['website_id'] = request.website.id
@@ -142,7 +145,7 @@ class ir_http(orm.AbstractModel):
                 is_a_bot = self.is_a_bot()
 
                 request.lang = request.context['lang'] = nearest_lang or preferred_lang
-                logger.info("before lang.")
+                logger.info("before first_pass.")
                 # if lang in url but not the displayed or default language --> change or remove
                 # or no lang in url, and lang to dispay not the default language --> add lang
                 # and not a POST request
@@ -170,7 +173,7 @@ class ir_http(orm.AbstractModel):
             # bind modified context
             request.website = request.website.with_context(request.context)
 
-        logger.info("Caching for auth public.")
+        logger.info('Caching for auth public.')
         # cache for auth public
         cache_time = getattr(func, 'routing', {}).get('cache')
         cache_enable = cache_time and request.httprequest.method == "GET" and request.website.user_id.id == request.uid
