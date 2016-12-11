@@ -213,7 +213,6 @@ class ir_http(orm.AbstractModel):
         # void werkzeug cached_property. TODO: find a proper way to do this
         for key in ('path', 'full_path', 'url', 'base_url'):
             request.httprequest.__dict__.pop(key, None)
-        logger.info("Begining _dispatch in reroute.")
         return self._dispatch()
 
     def _postprocess_args(self, arguments, rule):

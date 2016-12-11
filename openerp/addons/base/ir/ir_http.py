@@ -82,10 +82,13 @@ class ir_http(osv.AbstractModel):
             request.uid = request.session.uid
 
     def _authenticate(self, auth_method='user'):
+        _logger.info("Begining _authenticate")
         try:
             if request.session.uid:
                 try:
+                    _logger.info("Begining check_security")
                     request.session.check_security()
+                    _logger.info("check_security end")
                     # what if error in security.check()
                     #   -> res_users.check()
                     #   -> res_users.check_credentials()
@@ -100,6 +103,7 @@ class ir_http(osv.AbstractModel):
         except Exception:
             _logger.info("Exception during request Authentication.", exc_info=True)
             raise openerp.exceptions.AccessDenied()
+        _logger.info("authenticated")
         return auth_method
 
     def _serve_attachment(self):
