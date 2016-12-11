@@ -63,7 +63,9 @@ class ir_http(osv.AbstractModel):
 
     def _find_handler(self, return_rule=False):
         _logger.info("Finding handler")
-        return self.routing_map().bind_to_environ(request.httprequest.environ).match(return_rule=return_rule)
+        handler = self.routing_map().bind_to_environ(request.httprequest.environ).match(return_rule=return_rule)
+        _logger.info("Handler returned")
+        return handler
 
     def _auth_method_user(self):
         request.uid = request.session.uid
@@ -152,6 +154,7 @@ class ir_http(osv.AbstractModel):
     def _dispatch(self):
         # locate the controller method
         try:
+            _logger.info("Begining to find Handler.")
             rule, arguments = self._find_handler(return_rule=True)
             _logger.info("Handler found.")
             func = rule.endpoint
