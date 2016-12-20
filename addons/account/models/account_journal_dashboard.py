@@ -99,7 +99,7 @@ class account_journal(models.Model):
         for stmt in bank_stmt:
             #fill the gap between last data and the new one
             number_day_to_add = (datetime.strptime(stmt.get('date'), DF) - show_date).days
-            for day in range(0,number_day_to_add):
+            for day in range(0,number_day_to_add-1):
                 show_date = show_date + timedelta(days=1)
                 #get date in locale format
                 name = format_date(show_date, 'd LLLL Y', locale=locale)
@@ -110,6 +110,7 @@ class account_journal(models.Model):
             name = format_date(stmt_date, 'd LLLL Y', locale=locale)
             short_name = format_date(stmt_date, 'd MMM', locale=locale)
             data.append({'x': short_name, 'y': stmt.get('balance_end'), 'name': name})
+            show_date = stmt_date
 
         #continue the graph if the last statement isn't today
         if show_date != today:
