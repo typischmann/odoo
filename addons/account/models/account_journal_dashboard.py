@@ -99,7 +99,7 @@ class account_journal(models.Model):
         for stmt in bank_stmt:
             #fill the gap between last data and the new one
             number_day_to_add = (datetime.strptime(stmt.get('date'), DF) - show_date).days
-            for day in range(0,number_day_to_add - 2):
+            for day in range(0,number_day_to_add - 1):
                 show_date = show_date + timedelta(days=1)
                 #get date in locale format
                 name = format_date(show_date, 'd LLLL Y', locale=locale)
