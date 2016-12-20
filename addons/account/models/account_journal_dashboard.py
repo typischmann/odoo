@@ -72,29 +72,52 @@ class account_journal(models.Model):
         short_name = format_date(show_date, 'd MMM', locale=locale)
         data.append({'x':short_name,'y':start_balance, 'name':name})
 
+        # for stmt in bank_stmt:
+        #     #fill the gap between last data and the new one
+        #     number_day_to_add = (datetime.strptime(stmt.get('date'), DF) - show_date).days
+        #     last_balance = data[len(data) - 1]['y']
+        #     for day in range(0,number_day_to_add + 1):
+        #         show_date = show_date + timedelta(days=1)
+        #         #get date in locale format
+        #         name = format_date(show_date, 'd LLLL Y', locale=locale)
+        #         short_name = format_date(show_date, 'd MMM', locale=locale)
+        #         data.append({'x': short_name, 'y':last_balance, 'name': name})
+        #     #add new stmt value
+        #     data[len(data) - 1]['y'] = stmt.get('balance_end')
+        #
+        # #continue the graph if the last statement isn't today
+        # if show_date != today:
+        #     number_day_to_add = (today - show_date).days
+        #     last_balance = data[len(data) - 1]['y']
+        #     for day in range(0,number_day_to_add):
+        #         show_date = show_date + timedelta(days=1)
+        #         #get date in locale format
+        #         name = format_date(show_date, 'd LLLL Y', locale=locale)
+        #         short_name = format_date(show_date, 'd MMM', locale=locale)
+        #         data.append({'x': short_name, 'y':last_balance, 'name': name})
+
         for stmt in bank_stmt:
             #fill the gap between last data and the new one
             number_day_to_add = (datetime.strptime(stmt.get('date'), DF) - show_date).days
-            last_balance = data[len(data) - 1]['y']
+            data[len(data) - 1]['y'] = stmt.get('balance_end')
             for day in range(0,number_day_to_add + 1):
                 show_date = show_date + timedelta(days=1)
                 #get date in locale format
                 name = format_date(show_date, 'd LLLL Y', locale=locale)
                 short_name = format_date(show_date, 'd MMM', locale=locale)
-                data.append({'x': short_name, 'y':last_balance, 'name': name})
+                data.append({'x': short_name, 'y':0, 'name': name})
             #add new stmt value
-            data[len(data) - 1]['y'] = stmt.get('balance_end')
+
 
         #continue the graph if the last statement isn't today
         if show_date != today:
             number_day_to_add = (today - show_date).days
-            last_balance = data[len(data) - 1]['y']
             for day in range(0,number_day_to_add):
                 show_date = show_date + timedelta(days=1)
                 #get date in locale format
                 name = format_date(show_date, 'd LLLL Y', locale=locale)
                 short_name = format_date(show_date, 'd MMM', locale=locale)
-                data.append({'x': short_name, 'y':last_balance, 'name': name})
+                data.append({'x': short_name, 'y':0, 'name': name})
 
         return [{'values': data, 'area': True}]
 
