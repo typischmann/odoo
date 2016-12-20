@@ -51,7 +51,7 @@ class account_journal(models.Model):
         #                 WHERE a.id = b.stmt_id;"""
         #
         # This query should be corrected as follwing:
-        query = """SELECT c.date, sum(c.balance_end)
+        query = """SELECT c.date, sum(c.balance_end) AS balance_end
                                         FROM account_bank_statement AS c
                                         WHERE c.journal_id = %s
                                             AND c.date > %s
@@ -99,7 +99,7 @@ class account_journal(models.Model):
         for stmt in bank_stmt:
             #fill the gap between last data and the new one
             number_day_to_add = (datetime.strptime(stmt.get('date'), DF) - show_date).days
-            for day in range(0,number_day_to_add - 1):
+            for day in range(0,number_day_to_add - 2):
                 show_date = show_date + timedelta(days=1)
                 #get date in locale format
                 name = format_date(show_date, 'd LLLL Y', locale=locale)
