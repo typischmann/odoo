@@ -1595,7 +1595,7 @@ msgstr "否"
 #: code:addons/web/static/src/xml/base.xml:203
 #, python-format
 msgid "No Update:"
-msgstr ""
+msgstr "无更新:"
 
 #. module: web
 #. openerp-web
@@ -1654,7 +1654,7 @@ msgstr "没有数据被提供"
 #: code:addons/web/static/src/js/views/graph_widget.js:89
 #, python-format
 msgid "No data to display"
-msgstr ""
+msgstr "无数据可以展示"
 
 #. module: web
 #. openerp-web
@@ -1699,7 +1699,7 @@ msgstr "一般"
 #: code:addons/web/static/src/js/views/form_widgets.js:648
 #, python-format
 msgid "Not Archived"
-msgstr ""
+msgstr "未归档"
 
 #. module: web
 #. openerp-web
@@ -1829,7 +1829,7 @@ msgstr "仅用于您个人"
 #: code:addons/web/static/src/xml/base.xml:113
 #, python-format
 msgid "Open View"
-msgstr ""
+msgstr "打开视图"
 
 #. module: web
 #. openerp-web
@@ -1873,7 +1873,7 @@ msgstr "饼图"
 msgid ""
 "Pie chart cannot display all zero numbers.. Try to change your domain to "
 "display positive results"
-msgstr ""
+msgstr "饼状图不能展示０值，请更改数值为正数"
 
 #. module: web
 #. openerp-web
@@ -1883,7 +1883,7 @@ msgstr ""
 msgid ""
 "Pie chart cannot mix positive and negative numbers. Try to change your "
 "domain to only display positive results"
-msgstr ""
+msgstr "饼状图不能展示正数和负数的混合，请更改数值为正数"
 
 #. module: web
 #. openerp-web
@@ -2264,7 +2264,7 @@ msgstr "仍然在加载中...<br />请稍候...."
 #: code:addons/web/static/src/js/views/form_widgets.js:655
 #, python-format
 msgid "Switch Off"
-msgstr ""
+msgstr "关闭"
 
 #. module: web
 #. openerp-web
@@ -2272,7 +2272,7 @@ msgstr ""
 #: code:addons/web/static/src/js/views/form_widgets.js:657
 #, python-format
 msgid "Switch On"
-msgstr ""
+msgstr "打开"
 
 #. module: web
 #. openerp-web
@@ -2314,7 +2314,7 @@ msgstr "下列字段无效："
 msgid ""
 "The line has been modified, your changes will be discarded. Are you sure you"
 " want to discard the changes ?"
-msgstr ""
+msgstr "记录已经被编辑更改，你的改动将不会被保存，你确定放弃改动吗？"
 
 #. module: web
 #: code:addons/web/controllers/main.py:835
@@ -2355,7 +2355,7 @@ msgstr "无法在数据库中找到此字段"
 msgid ""
 "The record has been modified, your changes will be discarded. Are you sure "
 "you want to leave this page ?"
-msgstr ""
+msgstr "记录已经被编辑更改，你的改动将不会被保存，你确定离开本页面吗？"
 
 #. module: web
 #. openerp-web
@@ -2483,14 +2483,14 @@ msgstr "树形"
 #: code:addons/web/static/src/js/web_client.js:414
 #, python-format
 msgid "Trying to reconnect..."
-msgstr ""
+msgstr "正在尝试重新连接..."
 
 #. module: web
 #. openerp-web
 #: code:addons/web/static/src/js/framework/crash_manager.js:48
 #, python-format
 msgid "Trying to reconnect... "
-msgstr ""
+msgstr "正在尝试重新连接... "
 
 #. module: web
 #. openerp-web
@@ -2507,7 +2507,7 @@ msgstr "类型："
 #: code:addons/web/static/src/js/views/list_view.js:309
 #, python-format
 msgid "Unarchive"
-msgstr ""
+msgstr "未归档"
 
 #. module: web
 #. openerp-web
@@ -2759,7 +2759,7 @@ msgstr "是"
 #: code:addons/web/static/src/js/web_client.js:423
 #, python-format
 msgid "You are back online"
-msgstr ""
+msgstr "您已经重新连线"
 
 #. module: web
 #. openerp-web

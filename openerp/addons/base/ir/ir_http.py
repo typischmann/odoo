@@ -82,7 +82,6 @@ class ir_http(osv.AbstractModel):
             request.uid = request.session.uid
 
     def _authenticate(self, auth_method='user'):
-        _logger.info("Begining _authenticate")
         try:
             if request.session.uid:
                 try:

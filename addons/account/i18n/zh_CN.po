@@ -4915,7 +4915,7 @@ msgstr ""
 #. module: account
 #: selection:account.payment,payment_difference_handling:0
 msgid "Keep open"
-msgstr ""
+msgstr "保持open"
 
 #. module: account
 #. openerp-web
@@ -5336,7 +5336,7 @@ msgstr "3月"
 #. module: account
 #: selection:account.payment,payment_difference_handling:0
 msgid "Mark invoice as fully paid"
-msgstr ""
+msgstr "票据标记为完全支付"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_move_line_matched_credit_ids

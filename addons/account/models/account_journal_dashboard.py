@@ -39,16 +39,25 @@ class account_journal(models.Model):
         # Query to optimize loading of data for bank statement graphs
         # Return a list containing the latest bank statement balance per day for the
         # last 30 days for current journal
-        query = """SELECT a.date, a.balance_end 
-                        FROM account_bank_statement AS a, 
-                            (SELECT c.date, max(c.id) AS stmt_id 
-                                FROM account_bank_statement AS c 
-                                WHERE c.journal_id = %s 
-                                    AND c.date > %s 
-                                    AND c.date <= %s 
-                                    GROUP BY date, id 
-                                    ORDER BY date, id) AS b 
-                        WHERE a.id = b.stmt_id;"""
+        # query = """SELECT a.date, a.balance_end
+        #                 FROM account_bank_statement AS a,
+        #                     (SELECT c.date, max(c.id) AS stmt_id
+        #                         FROM account_bank_statement AS c
+        #                         WHERE c.journal_id = %s
+        #                             AND c.date > %s
+        #                             AND c.date <= %s
+        #                             GROUP BY date, id
+        #                             ORDER BY date, id) AS b
+        #                 WHERE a.id = b.stmt_id;"""
+        #
+        # This query should be corrected as follwing:
+        query = """SELECT c.date, sum(c.balance_end)
+                                        FROM account_bank_statement AS c
+                                        WHERE c.journal_id = %s
+                                            AND c.date > %s
+                                            AND c.date <= %s
+                                            GROUP BY date
+                                            ORDER BY date;"""
 
         self.env.cr.execute(query, (self.id, last_month, today))
         bank_stmt = self.env.cr.dictfetchall()
