@@ -212,7 +212,7 @@ msgstr "可销售"
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_can_be_expensed
 msgid "Can be expensed"
-msgstr ""
+msgstr "可列支的"
 
 #. module: delivery
 #: model:ir.ui.view,arch_db:delivery.view_picking_withcarrier_out_form
@@ -252,7 +252,7 @@ msgstr "检查产品是否适于成员。"
 #. module: delivery
 #: model:ir.actions.act_window,help:delivery.action_delivery_carrier_form
 msgid "Click to define a new delivery method."
-msgstr ""
+msgstr "点击这里定义新的运送方式"
 
 #. module: delivery
 #: model:ir.model.fields,help:delivery.field_delivery_carrier_uos_coeff
@@ -279,7 +279,7 @@ msgstr "条件"
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_purchase_method
 msgid "Control Purchase Bills"
-msgstr ""
+msgstr "管控采购票据"
 
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_standard_price
@@ -406,7 +406,7 @@ msgstr "运输方法"
 #. module: delivery
 #: model:ir.model,name:delivery.model_delivery_price_rule
 msgid "Delivery Price Rules"
-msgstr ""
+msgstr "送货价格规则"
 
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_product_id
@@ -428,7 +428,7 @@ msgstr "说明"
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_description_picking
 msgid "Description on Picking"
-msgstr ""
+msgstr "关于拣货的描述"
 
 #. module: delivery
 #: model:ir.ui.view,arch_db:delivery.view_delivery_carrier_form
@@ -451,7 +451,7 @@ msgstr "决定显示顺序"
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_display_name
 #: model:ir.model.fields,field_description:delivery.field_delivery_price_rule_display_name
 msgid "Display Name"
-msgstr ""
+msgstr "展示名称"
 
 #. module: delivery
 #: model:ir.actions.act_window,help:delivery.action_delivery_carrier_form
@@ -464,7 +464,7 @@ msgstr ""
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_sale_order_delivery_price
 msgid "Estimated Delivery Price"
-msgstr ""
+msgstr "预估的运送价格"
 
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_event_ok
@@ -535,12 +535,12 @@ msgstr "关注者"
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_message_channel_ids
 msgid "Followers (Channels)"
-msgstr ""
+msgstr "关注者（频道）"
 
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_message_partner_ids
 msgid "Followers (Partners)"
-msgstr ""
+msgstr "关注者（伙伴）"
 
 #. module: delivery
 #: model:ir.model.fields,field_description:delivery.field_delivery_carrier_virtual_available

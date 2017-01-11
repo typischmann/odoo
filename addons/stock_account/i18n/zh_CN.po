@@ -52,7 +52,7 @@ msgstr "允许在产品或者产品分类配置存货估值。"
 #. module: stock_account
 #: model:ir.model.fields,field_description:stock_account.field_product_product_asset_category_id
 msgid "Asset Type"
-msgstr ""
+msgstr "资产类型"
 
 #. module: stock_account
 #: selection:product.category,property_cost_method:0
@@ -63,7 +63,7 @@ msgstr "平均价格"
 #. module: stock_account
 #: model:ir.model.fields,field_description:stock_account.field_product_product_can_be_expensed
 msgid "Can be expensed"
-msgstr ""
+msgstr "可列支"
 
 #. module: stock_account
 #: model:ir.ui.view,arch_db:stock_account.view_change_standard_price
@@ -157,12 +157,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:stock_account.field_stock_history_display_name
 #: model:ir.model.fields,field_description:stock_account.field_wizard_valuation_history_display_name
 msgid "Display Name"
-msgstr ""
+msgstr "展示名称"
 
 #. module: stock_account
 #: model:ir.model.fields,field_description:stock_account.field_stock_inventory_accounting_date
 msgid "Force Accounting Date"
-msgstr ""
+msgstr "强制审计日期"
 
 #. module: stock_account
 #: model:ir.ui.view,arch_db:stock_account.view_stock_history_report_search
@@ -221,7 +221,7 @@ msgstr "安装，允许影响到采摘到岸成本的模块，然后将它们拆
 #. module: stock_account
 #: model:ir.model,name:stock_account.model_stock_inventory
 msgid "Inventory"
-msgstr ""
+msgstr "盘点"
 
 #. module: stock_account
 #: model:ir.model,name:stock_account.model_stock_location
@@ -247,7 +247,7 @@ msgstr "存货价值"
 #: model:ir.model.fields,field_description:stock_account.field_wizard_valuation_history_choose_date
 #: model:ir.ui.menu,name:stock_account.menu_action_wizard_valuation_history
 msgid "Inventory at Date"
-msgstr ""
+msgstr "根据日期盘点"
 
 #. module: stock_account
 #: model:ir.model,name:stock_account.model_account_invoice
