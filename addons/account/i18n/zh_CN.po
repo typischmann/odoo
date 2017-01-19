@@ -4312,7 +4312,7 @@ msgstr ""
 #. module: account
 #: model:ir.ui.view,arch_db:account.account_planner
 msgid "If you want to do it yourself:"
-msgstr ""
+msgstr "如果你想自己处理该事务"
 
 #. module: account
 #: model:ir.ui.view,arch_db:account.account_planner
@@ -4330,14 +4330,14 @@ msgstr "立即付款"
 #. module: account
 #: model:ir.ui.view,arch_db:account.account_planner
 msgid "Import using the \"Import\" button on the top left corner of"
-msgstr ""
+msgstr "点击左上角的\"导入\"按钮进行导入"
 
 #. module: account
 #: model:ir.ui.view,arch_db:account.account_planner
 msgid ""
 "Importing your statements in via a supported file format (QIF, OFX, CODA or "
 "CSV format)"
-msgstr ""
+msgstr "用支持的文件格式导入你的对账单（QIF, OFX, CODA, CSV 格式）"
 
 #. module: account
 #: model:ir.ui.view,arch_db:account.account_planner
@@ -4366,14 +4366,14 @@ msgstr "要删除银行对账单，必须先取消它以便删除相关分类账
 msgid ""
 "In order to pay multiple invoices at once, they must belong to the same "
 "partner."
-msgstr ""
+msgstr "如果要打印多张单据，请确保它们属于同一业务伙伴"
 
 #. module: account
 #: code:addons/account/models/account_payment.py:128
 #, python-format
 msgid ""
 "In order to pay multiple invoices at once, they must use the same currency."
-msgstr ""
+msgstr "如果要打印多张单据，请确保它们的货币一致"
 
 #. module: account
 #: model:ir.ui.view,arch_db:account.account_planner
@@ -4388,18 +4388,18 @@ msgstr "来电"
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_report_general_ledger_initial_balance
 msgid "Include Initial Balances"
-msgstr ""
+msgstr "包含初始余额"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_tax_analytic
 msgid "Include in Analytic Cost"
-msgstr ""
+msgstr "包含在分析花费"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_tax_price_include
 #: model:ir.model.fields,field_description:account.field_account_tax_template_price_include
 msgid "Included in Price"
-msgstr ""
+msgstr "已包含在价格"
 
 #. module: account
 #: model:account.account.type,name:account.data_account_type_revenue
@@ -4425,7 +4425,7 @@ msgstr "产品模板的收入科目"
 #: code:addons/account/static/src/js/account_reconciliation_widgets.js:1793
 #, python-format
 msgid "Incorrect Operation"
-msgstr ""
+msgstr "错误的操作"
 
 #. module: account
 #: model:ir.ui.view,arch_db:account.view_move_line_form
@@ -4910,7 +4910,7 @@ msgstr "留空使用当前日期"
 #. module: account
 #: model:ir.model.fields,help:account.field_account_invoice_date
 msgid "Keep empty to use the invoice date."
-msgstr ""
+msgstr "留空使用当前日期"
 
 #. module: account
 #: selection:account.payment,payment_difference_handling:0
@@ -7467,7 +7467,7 @@ msgstr "状态"
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_cashbox_line_subtotal
 msgid "Subtotal"
-msgstr ""
+msgstr "分享总计"
 
 #. module: account
 #: model:ir.ui.view,arch_db:account.report_invoice_document
