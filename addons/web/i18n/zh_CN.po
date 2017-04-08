@@ -328,7 +328,7 @@ msgstr "添加"
 #: code:addons/web/static/src/xml/base.xml:1188
 #, python-format
 msgid "Add Custom Filter"
-msgstr ""
+msgstr "添加自定义筛选"
 
 #. module: web
 #. openerp-web
