@@ -3411,6 +3411,7 @@ class BaseModel(object):
             # mark non-existing records in missing
             forbidden = missing.exists()
             if forbidden:
+		_logger.info('Access Denied due to reading from database, model: %s, missing: %s' % (self._name, ','.join(map(repr,missing))))
                 # store an access error exception in existing records
                 exc = AccessError(
                     _('The requested operation cannot be completed due to security restrictions. Please contact your system administrator.\n\n(Document type: %s, Operation: %s)') % \
