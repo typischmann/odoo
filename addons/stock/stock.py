@@ -779,6 +779,7 @@ class stock_picking(models.Model):
                 if len(move) == 3:
                     move[2]['location_id'] = vals['location_id']
                     move[2]['location_dest_id'] = vals['location_dest_id']
+                    move[2]['picking_type_id'] = vals['picking_type_id']
         return super(stock_picking, self).create(cr, user, vals, context)
 
     def write(self, cr, uid, ids, vals, context=None):
@@ -788,6 +789,8 @@ class stock_picking(models.Model):
             after_vals['location_id'] = vals['location_id']
         if vals.get('location_dest_id'):
             after_vals['location_dest_id'] = vals['location_dest_id']
+	if vals.get('picking_type_id'):
+	    after_vals['picking_type_id'] = vals['picking_type_id']
         # Change locations of moves if those of the picking change
         if after_vals:
             moves = []
@@ -2360,7 +2363,7 @@ class stock_move(osv.osv):
                 todo_moves.append(move)
 
                 #we always keep the quants already assigned and try to find the remaining quantity on quants not assigned only
-                main_domain[move.id] = [('reservation_id', '=', False), ('qty', '>', 0)]
+                main_domain[move.id] = [('reservation_id', '=', False), ('qty', '!=', 0)]
 
                 #if the move is preceeded, restrict the choice of quants in the ones moved previously in original move
                 ancestors = self.find_move_ancestors(cr, uid, move, context=context)
@@ -2607,7 +2610,7 @@ class stock_move(osv.osv):
                     move_qty_ops[move] += record.qty
             #Process every move only once for every pack operation
             for move in move_qty_ops:
-                main_domain = [('qty', '>', 0)]
+                main_domain = [('qty', '!=', 0)]
                 self.check_tracking(cr, uid, move, ops, context=context)
                 preferred_domain = [('reservation_id', '=', move.id)]
                 fallback_domain = [('reservation_id', '=', False)]
@@ -2653,7 +2656,7 @@ class stock_move(osv.osv):
         for move in self.browse(cr, uid, ids, context=context):
             move_qty_cmp = float_compare(move_qty[move.id], 0, precision_rounding=move.product_id.uom_id.rounding)
             if move_qty_cmp > 0:  # (=In case no pack operations in picking)
-                main_domain = [('qty', '>', 0)]
+                main_domain = [('qty', '!=', 0)]
                 preferred_domain = [('reservation_id', '=', move.id)]
                 fallback_domain = [('reservation_id', '=', False)]
                 fallback_domain2 = ['&', ('reservation_id', '!=', move.id), ('reservation_id', '!=', False)]
